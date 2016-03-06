@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="app.js"></script>
+</head>
+<body ng-app="myApp" ng-controller="myCtrl as ctrl">
+    <h1>Dagens Joke</h1>
+    <p>{{ctrl.randomJoke}}</p>
+
+    <h2>All Jokes</h2>
+    <table class="table">
+        <tr ng-repeat="joke in ctrl.jokes">
+            <th> Joke: </th>
+            <td>{{ joke }}</td>
+        </tr>
+    </table>
+
+    <h2>Here you can add a new joke:</h2>
+    <form method="POST" action="">
+        <input type="text" name="newJoke"/><button type="submit" name="Submit">Add Joke</button>
+    </form>
+
+</body>
+</html>
