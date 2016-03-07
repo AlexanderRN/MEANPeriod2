@@ -38,7 +38,7 @@ describe("POST: /api/joke", function () {
     it("should get a random joke", function(done){
         request('http://localhost:'+TEST_PORT+'/api/joke/random', function(error,res,body){
             var randomJoke = JSON.parse(body);
-            expect(randomJoke.joke).to.be.a('string'),
+            expect(randomJoke).to.be.a('string'),
                 expect(res.statusCode).to.be.equal(200);
             done();
         })
@@ -47,7 +47,7 @@ describe("POST: /api/joke", function () {
     it("should get a all jokes", function(done){
         request('http://localhost:'+TEST_PORT+'/api/jokes', function(error,res,body){
             var allJokes = JSON.parse(body);
-            expect(allJokes.jokes).to.be.an('Array'),
+            expect(allJokes).to.be.an('Array'),
                 expect(res.statusCode).to.be.equal(200);
             done();
         })
