@@ -2,13 +2,18 @@
 Period 2 of MEAN
 
 <strong>Why would you consider a Scripting Language as JavaScript as your Backend Platform.</strong>
-
+One bonus of using JS is the fact that you get an all-around language. But, the real reasons for using scripting language (JS) as Backend, could be: <br>
+The easy accesiabilty for new packages using NPM.<br>
+One all around language.
 
 <strong>Explain Pros & Cons in using Node.js + Express to implement your Backend compared to a strategy using for
 example Java/JAX-RS/Tomcat</strong>
+The POJO/Objects, differences.
+Simplicity of the servers
 
 <strong>Node.js uses a Single Threaded Non-blocking strategy to handle asynchronous task. Explain strategies to
 implement a Node.js based server architecture that still could take advantage of a multi-core Server.</strong>
+
 
 <strong>Explain, using relevant examples, concepts related to the testing a REST-API using Node/JavaScript +
 relevant packages</strong> 
